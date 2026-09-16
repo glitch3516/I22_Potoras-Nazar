@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Практична робота - Варіант 2</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Каталог комп'ютерної техніки</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Категорія</th>
+                <th colspan="2">Інформація про товар</th>
+                <th rowspan="2">Ціна (грн)</th>
+                <th rowspan="2">Наявність</th>
+            </tr>
+            <tr>
+                <th>Назва товару</th>
+                <th>Виробник</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Периферія</td>
+                <td>Клавіатура Apex 3</td>
+                <td>SteelSeries</td>
+                <td>2800</td>
+                <td>В наявності</td>
+            </tr>
+            <tr>
+                <td>Миша DeathAdder</td>
+                <td>Razer</td>
+                <td>1600</td>
+                <td>В наявності</td>
+            </tr>
+            <tr>
+                <td>Ноутбуки</td>
+                <td>Legion 5 Pro</td>
+                <td>Lenovo</td>
+                <td>54000</td>
+                <td>Під замовлення</td>
+            </tr>
+            <tr>
+                <td>Монітори</td>
+                <td>UltraGear 27"</td>
+                <td>LG</td>
+                <td>11500</td>
+                <td>В наявності</td>
+            </tr>
+            <tr>
+                <td>Аудіо</td>
+                <td>BlackShark V2</td>
+                <td>Razer</td>
+                <td>3200</td>
+                <td>Закінчується</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Всього товарів:</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

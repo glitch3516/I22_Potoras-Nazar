@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px;
+}
+
+/* 3. Появление профиля слева при загрузке */
+.profile-card {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+    /* Анимация появления */
+    animation: slideInLeft 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 4. Декоративный элемент с бесконечным вращением */
+.decor-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    background: #ff5722;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.4);
+
+    /* Бесконечная анимация вращения */
+    animation: spinAround 4s linear infinite;
+}
+
+@keyframes spinAround {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Обертка аватара */
+.avatar-wrapper {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #4a69bd;
+    box-shadow: 0 8px 16px rgba(74, 105, 189, 0.25);
+}
+
+/* 1. Увеличение и поворот фотографии при наведении */
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1) rotate(0deg);
+    transition: transform 0.4s ease;
+}
+
+.avatar-wrapper:hover .avatar {
+    transform: scale(1.15) rotate(7deg);
+}
+
+/* Текстовые стили */
+.user-name {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 6px;
+}
+
+.user-role {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a69bd;
+    margin-bottom: 14px;
+}
+
+.user-bio {
+    font-size: 13.5px;
+    color: #636e72;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* 2. Плавное изменение цвета и масштаба кнопки */
+.btn-subscribe {
+    background-color: #4a69bd;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 34px;
+    cursor: pointer;
+    outline: none;
+    transform: scale(1);
+    box-shadow: 0 6px 15px rgba(74, 105, 189, 0.35);
+
+    /* Плавный переход */
+    transition: background-color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.btn-subscribe:hover {
+    background-color: #1e3799;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(30, 55, 153, 0.45);
+}
+
+.btn-subscribe:active {
+    transform: scale(0.98);
+}

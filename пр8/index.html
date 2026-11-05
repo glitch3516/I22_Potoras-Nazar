@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфоліо веброзробника</title>
+  <!-- Для перевірки можна перемикати між original.css, style.css та style.min.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">DevPortfolio</div>
+      <nav class="header__nav">
+        <a href="#about" class="header__link">Про мене</a>
+        <a href="#skills" class="header__link">Навички</a>
+        <a href="#projects" class="header__link">Проєкти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Секція "Про мене" -->
+    <section id="about" class="about">
+      <h1 class="about__title">Привіт, я веброзробник</h1>
+      <p class="about__desc">
+        Спеціалізуюся на створенні сучасних, адаптивних та оптимізованих вебсторінок. Захоплююся чистою архітектурою стилів і високою швидкістю завантаження інтерфейсів.
+      </p>
+      <div class="about__actions">
+        <a href="#projects" class="btn btn--primary">Переглянути роботи</a>
+        <a href="#contact" class="btn btn--secondary">Зв'язатися</a>
+      </div>
+    </section>
+
+    <!-- Секція навичок (БЭМ-компонент .skill-card) -->
+    <section id="skills" class="section">
+      <h2 class="section__title">Мої навички</h2>
+      <div class="skills-grid">
+        <div class="card-base skill-card">
+          <div class="skill-card__icon">⚡</div>
+          <h3 class="skill-card__name">HTML5 & CSS3</h3>
+          <p class="skill-card__level">Семантика, CSS-змінні, БЕМ, Flexbox, Grid</p>
+        </div>
+
+        <div class="card-base skill-card">
+          <div class="skill-card__icon">🎨</div>
+          <h3 class="skill-card__name">Адаптивний дизайн</h3>
+          <p class="skill-card__level">Mobile-first, медіа-запити, гнучкі сітки</p>
+        </div>
+
+        <div class="card-base skill-card">
+          <div class="skill-card__icon">🚀</div>
+          <h3 class="skill-card__name">Оптимізація коду</h3>
+          <p class="skill-card__level">Мінімізація, усунення дублювання, продуктивність</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція проєктів (БЭМ-компонент .project-card) -->
+    <section id="projects" class="section">
+      <h2 class="section__title">Мої проєкти</h2>
+      <div class="projects-grid">
+        <!-- Проєкт 1 -->
+        <article class="card-base project-card">
+          <div class="project-card__image-wrap">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Корпоративний сайт" class="project-card__img">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Вебсайт</span>
+            <h3 class="project-card__title">Корпоративний лендинг</h3>
+            <p class="project-card__desc">Адаптивна посадкова сторінка для технологічної компанії з використанням CSS Grid.</p>
+            <a href="#" class="btn btn--primary project-card__btn">Демо проєкту</a>
+          </div>
+        </article>
+
+        <!-- Проєкт 2 -->
+        <article class="card-base project-card">
+          <div class="project-card__image-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Аналітична панель" class="project-card__img">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Інтерфейс</span>
+            <h3 class="project-card__title">Панель моніторингу</h3>
+            <p class="project-card__desc">Світла панель управління зі зручною структурою карточок та графічних блоків.</p>
+            <a href="#" class="btn btn--primary project-card__btn">Демо проєкту</a>
+          </div>
+        </article>
+
+        <!-- Проєкт 3 -->
+        <article class="card-base project-card">
+          <div class="project-card__image-wrap">
+            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=600&q=80" alt="Інтернет-магазин" class="project-card__img">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__tag">E-Commerce</span>
+            <h3 class="project-card__title">Каталог інтернет-магазину</h3>
+            <p class="project-card__desc">Каталог товарів з фільтрами, анімованими переходами при наведенні та кошиком.</p>
+            <a href="#" class="btn btn--primary project-card__btn">Демо проєкту</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p>© 2026 Портфоліо веброзробника. Всі права захищено.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
